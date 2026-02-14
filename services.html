@@ -4,19 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Maa Pest Control</title>
+    <title>Our Services - SG Pest Control West Gudur</title>
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Our Services - SG Pest Control West Gudur" />
+    <meta property="og:description" content="Professional pest control services in West Gudur Rural." />
+    <meta property="og:image" content="https://www.sgpestcontrol.com/assets/SGPS_Logo.jpeg" />
+    <meta property="og:url" content="https://www.sgpestcontrol.com/services.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SG Pest Control Service" />
+    <meta property="og:locale" content="en_IN" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Services - SG Pest Control West Gudur" />
+    <meta name="twitter:description" content="Professional pest control services in West Gudur Rural." />
+    <meta name="twitter:image" content="https://www.sgpestcontrol.com/assets/SGPS_Logo.jpeg" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#064e3b',
-                        secondary: '#10b981',
-                        accent: '#fbbf24',
-                        light: '#f0fdf4',
+                        primary: '#1e3a8a',
+                        secondary: '#3b82f6',
+                        accent: '#facc15',
+                        light: '#eff6ff',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -25,15 +41,34 @@
             }
         }
     </script>
-<link rel="stylesheet" href="styles.css"></head>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.sgpestcontrol.com/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://www.sgpestcontrol.com/services.html"
+      }]
+    }
+    </script>
+</head>
 
 <body class="font-sans antialiased text-gray-800 bg-gray-50">
 
-    <!-- Header (Same as Index) -->
+    <!-- Header -->
     <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="header">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-primary flex items-center gap-2">
-                <i class="fa-solid fa-shield-virus text-secondary"></i> Maa Pest Control
+            <a href="index.html" class="block">
+                <img src="assets/SGPS_Logo.jpeg" alt="SG Pest Control"
+                    class="h-14 w-auto rounded-lg transition-transform hover:scale-105">
             </a>
             <nav class="hidden md:flex items-center gap-8">
                 <a href="index.html" class="font-medium text-gray-600 hover:text-primary transition-colors">Home</a>
@@ -45,9 +80,9 @@
                 <a href="faq.html" class="font-medium text-gray-600 hover:text-primary transition-colors">FAQ</a>
                 <a href="contact.html"
                     class="font-medium text-gray-600 hover:text-primary transition-colors">Contact</a>
-                <a href="tel:+911234567890"
-                    class="bg-accent hover:bg-yellow-400 text-primary font-bold py-2 px-6 rounded-full transition-transform hover:scale-105 shadow-md">Call
-                    Now</a>
+                <a href="contact.html"
+                    class="bg-accent hover:bg-yellow-400 text-primary font-bold py-2 px-6 rounded-full transition-transform hover:scale-105 shadow-md">24/7
+                    Support</a>
             </nav>
             <button class="md:hidden text-primary text-2xl" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
         </div>
@@ -60,22 +95,21 @@
             <a href="testimonials.html" class="block py-2 text-gray-600">Testimonials</a>
             <a href="faq.html" class="block py-2 text-gray-600">FAQ</a>
             <a href="contact.html" class="block py-2 text-gray-600">Contact</a>
-            <a href="tel:+911234567890"
-                class="block py-3 text-center bg-accent text-primary font-bold rounded-lg shadow-sm">Call Now</a>
+            <a href="contact.html" class="block py-3 text-center bg-accent text-primary font-bold shadow-sm">Call
+                Now</a>
         </div>
     </header>
 
-    <!-- Page Header -->
     <section class="bg-primary pt-32 pb-16 text-center text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-black/20 z-0"></div> <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/20 z-0"></div>
         <div class="container mx-auto px-4 relative z-10">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-            <p class="text-lg text-gray-200 max-w-2xl mx-auto">Comprehensive pest control solutions tailored for your
-                home and business.</p>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto">Providing 24/7 pest management to hospitals, homes, and
+                businesses in Gudur.</p>
         </div>
     </section>
 
-    <!-- Service Details -->
+    <!-- Services List -->
     <section class="py-16">
         <div class="container mx-auto px-4 space-y-20">
 
@@ -83,34 +117,25 @@
             <div id="termite"
                 class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
                 <div class="order-2 lg:order-1">
-                    <div class="inline-block p-3 rounded-lg bg-green-100 text-primary mb-4"><i
+                    <div class="inline-block p-3 rounded-lg bg-blue-100 text-primary mb-4"><i
                             class="fa-solid fa-bug text-2xl"></i></div>
                     <h2 class="text-3xl font-bold text-primary mb-4">Termite Control</h2>
                     <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        Termites cause billions in damage each year. Our anti-termite treatment creates a chemical
-                        barrier around your property to prevent entry and eliminate existing colonies.
+                        Protect your foundation and furniture. We offer anti-termite treatments for new constructions
+                        and existing buildings in Swarna Bharathi Nagar and beyond.
                     </p>
-                    <h3 class="font-bold text-gray-800 mb-3">Key Benefits:</h3>
                     <ul class="space-y-2 mb-8">
                         <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Long-lasting protection (up to 5 years)
-                        </li>
+                                class="fa-solid fa-check text-secondary"></i> Pre & Post Construction</li>
                         <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Pre-construction & Post-construction
-                            treatments</li>
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Drill-Fill-Seal advanced technology</li>
+                                class="fa-solid fa-check text-secondary"></i> Long-term protection</li>
                     </ul>
                     <a href="contact.html"
-                        class="bg-secondary hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-colors inline-block">Book
-                        Termite Inspection</a>
+                        class="bg-secondary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-colors inline-block">Book
+                        Inspection</a>
                 </div>
                 <div class="order-1 lg:order-2 h-80 rounded-xl overflow-hidden shadow-lg relative bg-gray-200">
-                    <img src="assets/service-termite.jpg" alt="Termite Control"
-                        class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
-                        <span class="text-white font-bold text-xl">Protect Your Investment</span>
-                    </div>
+                    <img src="assets/service-termite.jpg" alt="Termite" class="w-full h-full object-cover">
                 </div>
             </div>
 
@@ -118,170 +143,128 @@
             <div id="cockroach"
                 class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
                 <div class="h-80 rounded-xl overflow-hidden shadow-lg relative bg-gray-200">
-                    <img src="assets/service-cockroach.jpg" alt="Cockroach Control"
-                        class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
-                        <span class="text-white font-bold text-xl">Hygiene First</span>
-                    </div>
+                    <img src="assets/service-cockroach.jpg" alt="Cockroach" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <div class="inline-block p-3 rounded-lg bg-green-100 text-primary mb-4"><i
+                    <div class="inline-block p-3 rounded-lg bg-blue-100 text-primary mb-4"><i
                             class="fa-solid fa-locust text-2xl"></i></div>
                     <h2 class="text-3xl font-bold text-primary mb-4">Cockroach Control</h2>
                     <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        Cockroaches contaminate food and spread diseases like Salmonella. Our gel-based treatment is
-                        odorless, safe for kitchens, and highly effective.
+                        Keep your kitchen safe. Our gel treatments are perfect for restaurants and homes, eliminating
+                        cockroaches without mess or odor.
                     </p>
-                    <h3 class="font-bold text-gray-800 mb-3">Key Benefits:</h3>
-                    <ul class="space-y-2 mb-8">
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Odorless Gel Treatment</li>
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Safe for cabinets and appliances</li>
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Long-lasting residual effect</li>
-                    </ul>
                     <a href="contact.html"
-                        class="bg-secondary hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-colors inline-block">Book
-                        Cockroach Service</a>
+                        class="bg-secondary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-colors inline-block">Get
+                        Gel Treatment</a>
                 </div>
             </div>
 
-            <!-- Bed Bug Treatment -->
+            <!-- Other services condensed format for brevity but consistent -->
+            <!-- Bed Bug -->
             <div id="bedbug"
                 class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
                 <div class="order-2 lg:order-1">
-                    <div class="inline-block p-3 rounded-lg bg-green-100 text-primary mb-4"><i
+                    <div class="inline-block p-3 rounded-lg bg-blue-100 text-primary mb-4"><i
                             class="fa-solid fa-bed text-2xl"></i></div>
                     <h2 class="text-3xl font-bold text-primary mb-4">Bed Bug Treatment</h2>
                     <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        Bed bugs are resilient and hide deep in crevices. We use a combination of heat and chemical
-                        treatments to ensure complete eradication.
+                        Don't let bed bugs ruin your sleep. We provide intensive treatment to clear mattresses and
+                        furniture of infestations.
                     </p>
-                    <h3 class="font-bold text-gray-800 mb-3">Key Benefits:</h3>
-                    <ul class="space-y-2 mb-8">
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Deep penetration for eggs and adults</li>
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Minimal furniture disruption</li>
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Thorough 2-visit process</li>
-                    </ul>
                     <a href="contact.html"
-                        class="bg-secondary hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-colors inline-block">Get
-                        Clean Sleep</a>
+                        class="bg-secondary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-colors inline-block">Sleep
+                        Safe</a>
                 </div>
                 <div class="order-1 lg:order-2 h-80 rounded-xl overflow-hidden shadow-lg relative bg-gray-200">
-                    <img src="assets/service-bedbug.jpg" alt="Bed Bug Treatment"
-                        class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
-                </div>
-            </div>
-
-            <!-- Rodent Control -->
-            <div id="rodent"
-                class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-                <div class="h-80 rounded-xl overflow-hidden shadow-lg relative bg-gray-200">
-                    <img src="assets/service-rodent.jpg" alt="Rodent Control"
-                        class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
-                </div>
-                <div>
-                    <div class="inline-block p-3 rounded-lg bg-green-100 text-primary mb-4"><i
-                            class="fa-solid fa-otter text-2xl"></i></div>
-                    <h2 class="text-3xl font-bold text-primary mb-4">Rodent Control</h2>
-                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        Mice and rats can cause fires by chewing wires and spread hantavirus. We seal entry points and
-                        use tamper-resistant bait stations.
-                    </p>
-                    <h3 class="font-bold text-gray-800 mb-3">Key Benefits:</h3>
-                    <ul class="space-y-2 mb-8">
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Strategic Trap Placement</li>
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Entry Point Sealing</li>
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Pet-safe bait boxes</li>
-                    </ul>
-                    <a href="contact.html"
-                        class="bg-secondary hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-colors inline-block">Stop
-                        Rodents Now</a>
-                </div>
-            </div>
-
-            <!-- Mosquito Control -->
-            <div id="mosquito"
-                class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-                <div class="order-2 lg:order-1">
-                    <div class="inline-block p-3 rounded-lg bg-green-100 text-primary mb-4"><i
-                            class="fa-solid fa-mosquito text-2xl"></i></div>
-                    <h2 class="text-3xl font-bold text-primary mb-4">Mosquito Control</h2>
-                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        Protect your family from Dengue, Malaria, and Zika. We treat breeding grounds and provide
-                        fogging for adult mosquitoes.
-                    </p>
-                    <h3 class="font-bold text-gray-800 mb-3">Key Benefits:</h3>
-                    <ul class="space-y-2 mb-8">
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Larvicidal Treatment (Breeding Sources)
-                        </li>
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Thermal Fogging / Cold Fogging</li>
-                        <li class="flex items-center gap-2 text-gray-600"><i
-                                class="fa-solid fa-check text-secondary"></i> Outdoor & Indoor Solutions</li>
-                    </ul>
-                    <a href="contact.html"
-                        class="bg-secondary hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-colors inline-block">Book
-                        Fogging Service</a>
-                </div>
-                <div class="order-1 lg:order-2 h-80 rounded-xl overflow-hidden shadow-lg relative bg-gray-200">
-                    <img src="assets/service-mosquito.jpg" alt="Mosquito Control"
-                        class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                    <img src="assets/service-bedbug.jpg" alt="Bed Bug" class="w-full h-full object-cover">
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Footer (Same as Index) -->
-    <footer class="bg-gray-900 text-gray-300 py-12">
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 py-16">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                 <div>
-                    <a href="index.html" class="text-2xl font-bold text-white flex items-center gap-2 mb-4">
-                        <i class="fa-solid fa-shield-virus text-secondary"></i> Maa Pest Control
+                    <a href="index.html" class="block mb-6">
+                        <img src="assets/SGPS_Logo.jpeg" alt="SG Pest Control" class="h-12 w-auto rounded-lg">
                     </a>
-                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
-                        Professional, reliable, and eco-friendly pest control services dedicated to keeping your
-                        environment safe.
+                    <p class="text-sm leading-relaxed mb-6">
+                        SG Pest Control Service is the leading provider of residential and commercial pest management in
+                        West Gudur Rural, Andhra Pradesh.
                     </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white hover:text-primary transition-colors"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white hover:text-primary transition-colors"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://share.google/5L3HlfX8HcEg2JChT"
+                            class="text-white hover:text-primary transition-colors"><i
+                                class="fa-brands fa-google"></i></a>
+                    </div>
                 </div>
+
                 <div>
-                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
-                        <li><a href="about.html" class="hover:text-secondary transition-colors">About</a></li>
-                        <li><a href="services.html" class="hover:text-secondary transition-colors">Services</a></li>
-                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="pest-control-west-gudur.html"
+                                class="hover:text-primary transition-colors">Locations</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h4 class="text-lg font-bold text-white mb-4">Our Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#termite" class="hover:text-secondary transition-colors">Termite Control</a></li>
-                        <li><a href="#cockroach" class="hover:text-secondary transition-colors">Cockroach Control</a>
+                    <h4 class="text-white font-bold text-lg mb-6">Our Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="termite-control.html" class="hover:text-primary transition-colors">Termite
+                                Control</a></li>
+                        <li><a href="cockroach-control.html" class="hover:text-primary transition-colors">Cockroach
+                                Control</a></li>
+                        <li><a href="bed-bug-treatment.html" class="hover:text-primary transition-colors">Bed Bug
+                                Treatment</a></li>
+                        <li><a href="rodent-control.html" class="hover:text-primary transition-colors">Rodent
+                                Control</a></li>
+                        <li><a href="ant-control.html" class="hover:text-primary transition-colors">Ant Control</a></li>
+                        <li><a href="fly-control.html" class="hover:text-primary transition-colors">Fly Control</a></li>
+                        <li><a href="mosquito-control.html" class="hover:text-primary transition-colors">Mosquito
+                                Control</a></li>
+                        <li><a href="lizard-control.html" class="hover:text-primary transition-colors">Lizard
+                                Control</a></li>
+                        <li><a href="snake-control.html" class="hover:text-primary transition-colors">Snake Control</a>
                         </li>
-                        <li><a href="#bedbug" class="hover:text-secondary transition-colors">Bed Bug Treatment</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
-                    <ul class="space-y-2">
-                        <li><i class="fa-solid fa-phone text-secondary mr-2"></i> +91 123 456 7890</li>
-                        <li><i class="fa-solid fa-envelope text-secondary mr-2"></i> info@maapestcontrol.com</li>
+                    <h4 class="text-white font-bold text-lg mb-6">Contact Info</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-primary"></i>
+                            <span>Hospital Road, near Soft Tech Computer Center, Swarna Bharathi Nagar, West Gudur
+                                Rural, AP 524101</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-primary"></i>
+                            <a href="tel:+918897506435" class="hover:text-white">88975 06435</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-primary"></i>
+                            <a href="tel:+919966340084" class="hover:text-white">99663 40084</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span>info@sgpestcontrol.com</span>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
-                <p>&copy; 2024 Maa Pest Control. All rights reserved.</p>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-xs text-gray-500">
+                <p>&copy; 2026 SG Pest Control Service. All rights reserved.</p>
             </div>
         </div>
     </footer>
