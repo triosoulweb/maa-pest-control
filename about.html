@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Maa Pest Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#064e3b',
+                        secondary: '#10b981',
+                        accent: '#fbbf24',
+                        light: '#f0fdf4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<link rel="stylesheet" href="styles.css"></head>
+
+<body class="font-sans antialiased text-gray-800 bg-white">
+
+    <!-- Header (Same as Index) -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary flex items-center gap-2">
+                <i class="fa-solid fa-shield-virus text-secondary"></i> Maa Pest Control
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="font-medium text-gray-600 hover:text-primary transition-colors">Home</a>
+                <a href="services.html"
+                    class="font-medium text-gray-600 hover:text-primary transition-colors">Services</a>
+                <a href="about.html" class="font-medium text-primary hover:text-secondary transition-colors">About</a>
+                <a href="testimonials.html"
+                    class="font-medium text-gray-600 hover:text-primary transition-colors">Testimonials</a>
+                <a href="faq.html" class="font-medium text-gray-600 hover:text-primary transition-colors">FAQ</a>
+                <a href="contact.html"
+                    class="font-medium text-gray-600 hover:text-primary transition-colors">Contact</a>
+                <a href="tel:+911234567890"
+                    class="bg-accent hover:bg-yellow-400 text-primary font-bold py-2 px-6 rounded-full transition-transform hover:scale-105 shadow-md">Call
+                    Now</a>
+            </nav>
+            <button class="md:hidden text-primary text-2xl" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-4 hidden flex-col gap-4 border-t"
+            id="mobile-menu">
+            <a href="index.html" class="block py-2 text-gray-600">Home</a>
+            <a href="services.html" class="block py-2 text-gray-600">Services</a>
+            <a href="about.html" class="block py-2 text-primary">About</a>
+            <a href="testimonials.html" class="block py-2 text-gray-600">Testimonials</a>
+            <a href="faq.html" class="block py-2 text-gray-600">FAQ</a>
+            <a href="contact.html" class="block py-2 text-gray-600">Contact</a>
+            <a href="tel:+911234567890"
+                class="block py-3 text-center bg-accent text-primary font-bold rounded-lg shadow-sm">Call Now</a>
+        </div>
+    </header>
+
+    <section class="bg-primary pt-32 pb-16 text-center text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20 z-0"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About Maa Pest Control</h1>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto">Committed to creating safe, pest-free environments for
+                families and businesses.</p>
+        </div>
+    </section>
+
+    <!-- Company Intro -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="assets/about-team.jpg" alt="Our Team"
+                        class="rounded-2xl shadow-xl w-full h-auto object-cover">
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg border-l-4 border-secondary hidden md:block">
+                        <p class="text-primary font-bold text-lg">"Safety is our #1 Priority"</p>
+                        <p class="text-gray-500 text-sm">- Chief Technician</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-secondary font-semibold uppercase tracking-wider text-sm mb-2">Our Story</h2>
+                    <h3 class="text-3xl font-bold text-primary mb-6">A Decade of Excellence in Pest Management</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Maa Pest Control started with a simple mission: to provide effective pest control without
+                        compromising the health of our customers or the environment. Over the years, we have grown into
+                        a trusted name in the community, known for our integrity, expertise, and customer-first
+                        approach.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        We understand that pests are more than just a nuisance; they are a threat to your property and
+                        well-being. That's why we employ the latest technologies and follow strict safety protocols to
+                        ensure every job is done right.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-medal text-accent text-2xl"></i>
+                            <span class="font-bold text-gray-800">ISO Certified Process</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-users text-accent text-2xl"></i>
+                            <span class="font-bold text-gray-800">Expert Team</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-leaf text-accent text-2xl"></i>
+                            <span class="font-bold text-gray-800">Eco-Friendly</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-clock text-accent text-2xl"></i>
+                            <span class="font-bold text-gray-800">24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-primary mb-12">Our Mission & Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary text-2xl">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Customer Care</h3>
+                    <p class="text-gray-600">We treat your home like our own. Respect, punctuality, and cleanliness are
+                        at the heart of our service.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary text-2xl">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Innovation</h3>
+                    <p class="text-gray-600">We constantly update our methods and chemicals to ensure the most effective
+                        and safe treatments available.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div
+                        class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary text-2xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Integrity</h3>
+                    <p class="text-gray-600">Honest pricing, transparent processes, and no hidden fees. We deliver what
+                        we promise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA (Same as Index) -->
+    <section class="py-16 bg-primary text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready for a Pest-Free Home?</h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html"
+                    class="bg-accent hover:bg-yellow-400 text-primary font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105 text-lg">Contact
+                    Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Index) -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-white flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-shield-virus text-secondary"></i> Maa Pest Control
+                    </a>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        Professional, reliable, and eco-friendly pest control services dedicated to keeping your
+                        environment safe.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fa-solid fa-phone text-secondary mr-2"></i> +91 123 456 7890</li>
+                        <li><i class="fa-solid fa-envelope text-secondary mr-2"></i> info@maapestcontrol.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white hover:text-accent"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-accent"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Maa Pest Control. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

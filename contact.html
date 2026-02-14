@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Maa Pest Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#064e3b',
+                        secondary: '#10b981',
+                        accent: '#fbbf24',
+                        light: '#f0fdf4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<link rel="stylesheet" href="styles.css"></head>
+
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary flex items-center gap-2">
+                <i class="fa-solid fa-shield-virus text-secondary"></i> Maa Pest Control
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="font-medium text-gray-600 hover:text-primary transition-colors">Home</a>
+                <a href="services.html"
+                    class="font-medium text-gray-600 hover:text-primary transition-colors">Services</a>
+                <a href="about.html" class="font-medium text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="testimonials.html"
+                    class="font-medium text-gray-600 hover:text-primary transition-colors">Testimonials</a>
+                <a href="faq.html" class="font-medium text-gray-600 hover:text-primary transition-colors">FAQ</a>
+                <a href="contact.html"
+                    class="font-medium text-primary hover:text-secondary transition-colors">Contact</a>
+                <a href="tel:+911234567890"
+                    class="bg-accent hover:bg-yellow-400 text-primary font-bold py-2 px-6 rounded-full transition-transform hover:scale-105 shadow-md">Call
+                    Now</a>
+            </nav>
+            <button class="md:hidden text-primary text-2xl" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-4 hidden flex-col gap-4 border-t"
+            id="mobile-menu">
+            <a href="index.html" class="block py-2 text-gray-600">Home</a>
+            <a href="services.html" class="block py-2 text-gray-600">Services</a>
+            <a href="about.html" class="block py-2 text-gray-600">About</a>
+            <a href="testimonials.html" class="block py-2 text-gray-600">Testimonials</a>
+            <a href="faq.html" class="block py-2 text-gray-600">FAQ</a>
+            <a href="contact.html" class="block py-2 text-primary">Contact</a>
+            <a href="tel:+911234567890"
+                class="block py-3 text-center bg-accent text-primary font-bold rounded-lg shadow-sm">Call Now</a>
+        </div>
+    </header>
+
+    <section class="bg-primary pt-32 pb-16 text-center text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20 z-0"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto">Get in touch for a free inspection or any pest-related
+                inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-3xl shadow-xl overflow-hidden">
+                <!-- Contact Info Side -->
+                <div class="bg-gradient-to-br from-primary to-green-900 p-10 text-white flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Let's Discuss Your Needs</h2>
+                        <p class="mb-8 text-green-100/90 leading-relaxed">Fill out the form and our team will get back
+                            to you within 24 hours. For emergencies, please call us directly.</p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-lg mb-1">Call Us</h5>
+                                    <a href="tel:+911234567890"
+                                        class="text-green-100 hover:text-white transition-colors block">+91 123 456
+                                        7890</a>
+                                    <a href="tel:+910987654321"
+                                        class="text-green-100 hover:text-white transition-colors mt-1 block">+91 098 765
+                                        4321</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-brands fa-whatsapp text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-lg mb-1">WhatsApp</h5>
+                                    <a href="https://wa.me/911234567890"
+                                        class="text-green-100 hover:text-white transition-colors block">Chat with us
+                                        directly</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-envelope text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-lg mb-1">Email Us</h5>
+                                    <a href="mailto:info@maapestcontrol.com"
+                                        class="text-green-100 hover:text-white transition-colors block">info@maapestcontrol.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-map-location-dot text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-lg mb-1">Our Location</h5>
+                                    <p class="text-green-100 leading-relaxed">123 Green Avenue, Near Central Park,<br>
+                                        [City Name], State, India - 110001</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h5 class="font-bold text-lg mb-4">Follow Us</h5>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i
+                                    class="fa-brands fa-facebook-f text-white"></i></a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i
+                                    class="fa-brands fa-instagram text-white"></i></a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"><i
+                                    class="fa-brands fa-twitter text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="p-10">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary focus:ring-2 focus:ring-green-100 outline-none transition-colors"
+                                    placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary focus:ring-2 focus:ring-green-100 outline-none transition-colors"
+                                    placeholder="+91 98765 43210" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Service Required</label>
+                            <select id="service" name="service"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary focus:ring-2 focus:ring-green-100 outline-none transition-colors bg-white">
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="termite">Termite Control</option>
+                                <option value="cockroach">Cockroach Control</option>
+                                <option value="bedbug">Bed Bug Treatment</option>
+                                <option value="rodent">Rodent Control</option>
+                                <option value="mosquito">Mosquito Control</option>
+                                <option value="other">Other / General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-secondary focus:ring-2 focus:ring-green-100 outline-none transition-colors resize-none"
+                                placeholder="Tell us more about your pest problem..."></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-primary hover:bg-green-800 text-white font-bold py-4 rounded-lg shadow-md transition-transform hover:scale-[1.02] active:scale-95 text-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-96 w-full bg-gray-200">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.562095813334!2d77.20902121508203!3d28.61393908242498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd36a9457227%3A0xc3cb7768a865f802!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1684497645000!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Service Area Banner -->
+    <section class="bg-secondary text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-xl font-medium">Proudly serving homes and businesses across <span
+                    class="font-bold underline decoration-accent decoration-4 underline-offset-4">[City Name]</span> and
+                surrounding areas.</p>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Index) -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-white flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-shield-virus text-secondary"></i> Maa Pest Control
+                    </a>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        Professional, reliable, and eco-friendly pest control services dedicated to keeping your
+                        environment safe.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fa-solid fa-phone text-secondary mr-2"></i> +91 123 456 7890</li>
+                        <li><i class="fa-solid fa-envelope text-secondary mr-2"></i> info@maapestcontrol.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-white hover:text-accent"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-accent"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Maa Pest Control. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

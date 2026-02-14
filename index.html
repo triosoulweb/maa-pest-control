@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maa Pest Control - Safe & Effective Pest Solutions</title>
+    <meta name="description" content="Professional pest control services for homes and businesses. Certified technicians, eco-friendly treatments, and same-day service.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#064e3b', // Dark Emerald Green
+                        secondary: '#10b981', // Emerald 500
+                        accent: '#fbbf24', // Amber 400
+                        light: '#f0fdf4', // Light Green background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(6, 78, 59, 0.8), rgba(6, 78, 59, 0.7)), url('assets/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .blob {
+            position: absolute;
+            background: #10b981;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.2;
+            z-index: -1;
+        }
+    </style>
+<link rel="stylesheet" href="styles.css"></head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary flex items-center gap-2">
+                <i class="fa-solid fa-shield-virus text-secondary"></i> Maa Pest Control
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="font-medium text-primary hover:text-secondary transition-colors">Home</a>
+                <a href="services.html" class="font-medium text-gray-600 hover:text-primary transition-colors">Services</a>
+                <a href="about.html" class="font-medium text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="testimonials.html" class="font-medium text-gray-600 hover:text-primary transition-colors">Testimonials</a>
+                <a href="faq.html" class="font-medium text-gray-600 hover:text-primary transition-colors">FAQ</a>
+                <a href="contact.html" class="font-medium text-gray-600 hover:text-primary transition-colors">Contact</a>
+                <a href="tel:+911234567890" class="bg-accent hover:bg-yellow-400 text-primary font-bold py-2 px-6 rounded-full transition-transform hover:scale-105 shadow-md">
+                    Call Now
+                </a>
+            </nav>
+
+            <button class="md:hidden text-primary text-2xl" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-4 hidden flex-col gap-4 border-t" id="mobile-menu">
+            <a href="index.html" class="block py-2 text-primary font-medium">Home</a>
+            <a href="services.html" class="block py-2 text-gray-600">Services</a>
+            <a href="about.html" class="block py-2 text-gray-600">About</a>
+            <a href="testimonials.html" class="block py-2 text-gray-600">Testimonials</a>
+            <a href="faq.html" class="block py-2 text-gray-600">FAQ</a>
+            <a href="contact.html" class="block py-2 text-gray-600">Contact</a>
+            <a href="tel:+911234567890" class="block py-3 text-center bg-accent text-primary font-bold rounded-lg shadow-sm">Call Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen min-h-[600px] flex items-center justify-center text-white hero-bg" id="home">
+        <div class="container mx-auto px-4 text-center z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-secondary/80 text-sm font-semibold mb-4 backdrop-blur-sm animate-fade-in-up">Trusted & Certified Pest Control</span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight max-w-4xl mx-auto animate-fade-in-up delay-100">
+                Safe & Effective Pest Control <br class="hidden md:block" /> for Your Home and Business
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto animate-fade-in-up delay-200">
+                Don't let pests take over. Our certified technicians provide eco-friendly, same-day service to keep your environment safe and pest-free.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
+                <a href="#contact" class="bg-accent hover:bg-yellow-400 text-primary font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105 text-lg">
+                    Get Free Inspection
+                </a>
+                <a href="tel:+911234567890" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-3 px-8 rounded-full transition-all text-lg flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+            </div>
+            
+            <div class="mt-12 flex flex-wrap justify-center gap-6 md:gap-12 opacity-90 animate-fade-in-up delay-500">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center backdrop-blur-sm">
+                        <i class="fa-solid fa-certificate text-accent"></i>
+                    </div>
+                    <span>Certified Technicians</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center backdrop-blur-sm">
+                        <i class="fa-solid fa-leaf text-accent"></i>
+                    </div>
+                    <span>Eco-Friendly</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center backdrop-blur-sm">
+                        <i class="fa-solid fa-clock text-accent"></i>
+                    </div>
+                    <span>Same-Day Service</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <a href="#services" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white/70 hover:text-white">
+            <i class="fa-solid fa-chevron-down text-2xl"></i>
+        </a>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 bg-light/30 relative overflow-hidden" id="services">
+        <div class="blob w-96 h-96 top-0 left-0"></div>
+        <div class="blob w-96 h-96 bottom-0 right-0 !bg-accent/10"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="text-secondary font-semibold uppercase tracking-wider text-sm mb-2">Our Solutions</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-primary mb-4">Comprehensive Pest Control Services</h3>
+                <p class="text-gray-600">We offer specialized treatments for all types of pests, ensuring long-term protection for your property.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Cards -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-2 transition-transform duration-300 border-b-4 border-transparent hover:border-secondary group">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-bug text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Termite Control</h4>
+                    <p class="text-gray-600 mb-4 line-clamp-3">Protect your property from structural damage with our advanced anti-termite treatments. We use drill-fill-seal techniques.</p>
+                    <a href="services.html#termite" class="text-secondary font-semibold hover:text-primary transition-colors flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-2 transition-transform duration-300 border-b-4 border-transparent hover:border-secondary group">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-locust text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Cockroach Control</h4>
+                    <p class="text-gray-600 mb-4 line-clamp-3">Eliminate disease-spreading cockroaches designed for kitchens and bathrooms. Gel and spray treatments available.</p>
+                    <a href="services.html#cockroach" class="text-secondary font-semibold hover:text-primary transition-colors flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-2 transition-transform duration-300 border-b-4 border-transparent hover:border-secondary group">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-bed text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Bed Bug Treatment</h4>
+                    <p class="text-gray-600 mb-4 line-clamp-3">Sleep tight again. Our heat and chemical treatments ensure complete removal of bed bugs and their eggs.</p>
+                    <a href="services.html#bedbug" class="text-secondary font-semibold hover:text-primary transition-colors flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-2 transition-transform duration-300 border-b-4 border-transparent hover:border-secondary group">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-otter text-2xl"></i> <!-- Otter as generic rodent placeholder icon -->
+                        <!-- using font awesome icons, otter is closest readily available or generic paw -->
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Rodent Control</h4>
+                    <p class="text-gray-600 mb-4 line-clamp-3">Stop rats and mice from damaging wires and contaminating food. We use safe trapping and baiting methods.</p>
+                    <a href="services.html#rodent" class="text-secondary font-semibold hover:text-primary transition-colors flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-2 transition-transform duration-300 border-b-4 border-transparent hover:border-secondary group">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-mosquito text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">Mosquito Control</h4>
+                    <p class="text-gray-600 mb-4 line-clamp-3">Fogging and larvicidal treatments to reduce mosquito populations and prevent dengue and malaria.</p>
+                    <a href="services.html#mosquito" class="text-secondary font-semibold hover:text-primary transition-colors flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-2 transition-transform duration-300 border-b-4 border-transparent hover:border-secondary group">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-spider text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-3">General Pest Control</h4>
+                    <p class="text-gray-600 mb-4 line-clamp-3">A holistic approach to keep ants, spiders, and silverfish at bay. Ideal for regular home maintenance.</p>
+                    <a href="services.html#general" class="text-secondary font-semibold hover:text-primary transition-colors flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="services.html" class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium py-3 px-8 rounded-full transition-colors">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-primary text-white relative">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-secondary font-semibold uppercase tracking-wider text-sm mb-2">Why Maa Pest Control?</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">We Don't Just Kill Pests, We Protect Your Peace of Mind</h3>
+                    <p class="text-gray-300 mb-8 text-lg">Our integrated pest management approach focuses on safety, efficiency, and long-term prevention.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-circle text-accent text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Certified & Trained Technicians</h4>
+                                <p class="text-gray-400 text-sm">Our team is fully licensed and trained in the latest safety protocols.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-circle text-accent text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Safe, Eco-Friendly Chemicals</h4>
+                                <p class="text-gray-400 text-sm">Child and pet-safe products that are tough on pests but gentle on your home.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-circle text-accent text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-lg">100% Satisfaction Warranty</h4>
+                                <p class="text-gray-400 text-sm">If pests come back between treatments, so will we - at no extra cost.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="assets/technician.jpg" alt="Pest Control Technician" class="rounded-2xl shadow-2xl z-10 relative border-4 border-white/10 w-full h-auto object-cover">
+                    <div class="absolute -bottom-6 -left-6 bg-accent text-primary p-6 rounded-xl shadow-xl z-20 max-w-xs hidden md:block">
+                        <div class="text-4xl font-bold mb-1">10+</div>
+                        <div class="font-medium text-sm">Years of Experience Keeping Homes Safe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-secondary font-semibold uppercase tracking-wider text-sm mb-2">How It Works</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-primary">Simple 4-Step Process</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-light text-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-colors border-2 border-primary/20">1</div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Book Inspection</h4>
+                    <p class="text-gray-500 text-sm">Contact us via phone or form to schedule a convenient time.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-light text-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-colors border-2 border-primary/20">2</div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Site Assessment</h4>
+                    <p class="text-gray-500 text-sm">Our expert inspects your property to identify the root cause.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-light text-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-colors border-2 border-primary/20">3</div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Treatment</h4>
+                    <p class="text-gray-500 text-sm">We apply targeted, effective treatments to eliminate pests.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-16 h-16 bg-light text-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-colors border-2 border-primary/20">4</div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Follow-up</h4>
+                    <p class="text-gray-500 text-sm">We ensure the problem is gone and provide prevention tips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Preview -->
+    <section class="py-20 bg-light/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-secondary font-semibold uppercase tracking-wider text-sm mb-2">Testimonials</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-primary">What Our Customers Say</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex text-accent mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Excellent service! They removed a massive termite infestation from my garage. The technicians were polite and cleaned up afterward."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">JD</div>
+                        <div>
+                            <h5 class="font-bold text-gray-900 text-sm">John Doe</h5>
+                            <span class="text-xs text-gray-500">Homeowner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex text-accent mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"I called them for cockroaches in my kitchen. The gel treatment worked wonders. Haven't seen a single one in 3 months!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">AS</div>
+                        <div>
+                            <h5 class="font-bold text-gray-900 text-sm">Anjali Sharma</h5>
+                            <span class="text-xs text-gray-500">Restaurant Owner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex text-accent mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Very professional and affordable. They arrived on time and explained the whole process clearly. Highly recommended."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">MP</div>
+                        <div>
+                            <h5 class="font-bold text-gray-900 text-sm">Mike Peters</h5>
+                            <span class="text-xs text-gray-500">Homeowner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="testimonials.html" class="text-primary font-semibold hover:text-secondary transition-colors inline-flex items-center gap-2">Read More Reviews <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Pests Don't Wait, Neither Should You!</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Get a free consultation and quote today. Protect your family and property now.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-accent hover:bg-yellow-400 text-primary font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105 text-lg">
+                    Book Service Now
+                </a>
+                <a href="https://wa.me/911234567890" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-8 rounded-full transition-all text-lg flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="text-2xl font-bold text-white flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-shield-virus text-secondary"></i> Maa Pest Control
+                    </a>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        Professional, reliable, and eco-friendly pest control services dedicated to keeping your environment safe.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors">Services</a></li>
+                        <li><a href="testimonials.html" class="hover:text-secondary transition-colors">Testimonials</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#termite" class="hover:text-secondary transition-colors">Termite Control</a></li>
+                        <li><a href="services.html#cockroach" class="hover:text-secondary transition-colors">Cockroach Control</a></li>
+                        <li><a href="services.html#bedbug" class="hover:text-secondary transition-colors">Bed Bug Treatment</a></li>
+                        <li><a href="services.html#rodent" class="hover:text-secondary transition-colors">Rodent Control</a></li>
+                        <li><a href="services.html#mosquito" class="hover:text-secondary transition-colors">Mosquito Control</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-secondary"></i>
+                            <span>123 Green Avenue, [City Name], <br>State, Zip Code</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-secondary"></i>
+                            <a href="tel:+911234567890" class="hover:text-secondary transition-colors">+91 123 456 7890</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-secondary"></i>
+                            <a href="mailto:info@maapestcontrol.com" class="hover:text-secondary transition-colors">info@maapestcontrol.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 Maa Pest Control. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Floating Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-40">
+        <a href="https://wa.me/911234567890" target="_blank" class="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-transform hover:scale-110 animate-bounce-slow">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+        </a>
+        <a href="tel:+911234567890" class="w-14 h-14 bg-accent text-primary rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-400 transition-transform hover:scale-110">
+            <i class="fa-solid fa-phone text-xl"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
